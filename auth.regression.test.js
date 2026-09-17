@@ -21,7 +21,7 @@ describe("Regression Test - Login functionality", () => {
     expect(login("admin", "")).toBe(false);
   });
 
-  test("Login failed with both username and password empty", () => {
+  test("Login failed when username and password are empty", () => {
     expect(login("", "")).toBe(false);
   });
 
